@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200%3b0,300%3b0,400%3b0,500%3b0,600%3b0,700%3b0,800%3b0,900%3b1,200%3b1,300%3b1,400%3b1,500%3b1,600%3b1,700%3b1,800%3b1,900&display=swap");
+body {
+  font-family: "Nunito";
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #fff;
+  justify-content: space-between;
+  display: flex;
+  height: 80px;
+  box-sizing: border-box;
+  padding: 20px 165px;
+  border-bottom: 1px solid #edeef2;
+}
+header .navbar1 {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+header .navbar1 .img-hed {
+  width: 100px;
+  height: 45px;
+}
+header .navbar1 .input-wrapper {
+  position: relative;
+  margin-left: 48.6px;
+}
+header .navbar1 .input-wrapper input {
+  box-sizing: border-box;
+  background: #edeef2;
+  border-radius: 12px;
+  border: none;
+  font-size: 14px;
+  padding: 12px 10px;
+  width: 224px;
+  height: 40px;
+}
+header .navbar1 .input-wrapper:after {
+  content: "";
+  display: block;
+  background: url("../img/search.svg") no-repeat top right;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+header .navbar2 {
+  display: flex;
+  align-items: center;
+}
+header .navbar2 nav ul {
+  display: flex;
+  list-style-type: none;
+}
+header .navbar2 nav ul li {
+  padding-right: 20px;
+}
+header .navbar2 nav ul li a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  text-align: right;
+  color: #2b2b43;
+}
+header .navbar2 nav ul li.separate {
+  color: #EDEEF2;
+}
+header .navbar2 .pedidos,
+header .navbar2 .avatar {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  margin-left: 15px;
+  background: #f3f4ff;
+}
+
+header .navbar2 .pedidos .bag {
+  position: absolute;
+  top: 15px;
+  left: 14px;
+}
+header .navbar2 .pedidos .number-ped {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  border-radius: 7px;
+  line-height: 14px;
+  background-color: #4e60ff;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+  width: 19px;
+  height: 17px;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+header .navbar2 .avatar {
+  box-sizing: border-box;
+  border: 2px solid #4e60ff;
+}
+header .navbar2 .avatar img {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  border: 1px solid #fff;
+}
+
+header .navbar2 .nav-separate {
+  display: none;
+  margin: 16px;
+  height: 32px;
+  width: 1px;
+  background-color: #EDEEF2;
+}
+
+header .navbar2 .menu-mobile {
+  display: none;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 16px;
+  background: #EDEEF2
+}
+
+main {
+  display: flex;
+  padding: 0px 165px;
+}
+main > h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  color: #2b2b43;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+main #container1 {
+  margin-right: 30px;
+}
+main #container1 .dados {
+  display: flex;
+  width: 350px;
+  height: 72px;
+  margin-bottom: 12px;
+  background: #ffffff;
+  border: 1px solid #edeef2;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 16px;
+}
+main #container1 .dados:hover {
+  background: #f3f4ff;
+  border: 2px solid #4e60ff;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+main #container1 .dados:hover .dados-icon {
+  background-color: #4e60ff;
+}
+main #container1 .dados:hover .dados-icon .img1 {
+  display: none;
+}
+main #container1 .dados:hover .dados-icon .img2 {
+  display: block;
+}
+main #container1 .dados .dados-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #EDEEF2;
+  border-radius: 12px;
+}
+main #container1 .dados .dados-icon .img2 {
+  display: none;
+}
+main #container1 .dados .dados-p {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+main #container1 .dados .dados-p .p1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #2b2b43;
+}
+main #container1 .dados .dados-p .p2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #545563;
+}
+main #container2 .information {
+  width: 730px;
+  height: 604px;
+  padding: 0px 16px;
+  background: #ffffff;
+  border: 1px solid #edeef2;
+  box-sizing: border-box;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+main #container2 .information h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #2b2b43;
+  margin: 16px 0px;
+}
+main #container2 .information p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #545563;
+}
+main #container2 .information .info-avatar {
+  display: flex;
+}
+main #container2 .information .info-avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
+}
+main #container2 .information .info-avatar .info-button {
+  box-sizing: border-box;
+  width: 90px;
+  height: 44px;
+  padding: 16px;
+  margin-left: 25px;
+  margin-top: 35px;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  color: #83859c;
+}
+main #container2 .information .info-avatar .info-button:hover {
+  box-sizing: border-box;
+  width: 90px;
+  height: 44px;
+  padding: 16px;
+  margin-left: 25px;
+  margin-top: 35px;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  color: #4e60ff;
+  border: 1px solid #4e60ff;
+  cursor: pointer;
+}
+main #container2 form {
+  display: flex;
+  flex-wrap: wrap;
+}
+main #container2 form .item {
+  max-width: 50%;
+  min-width: 345px;
+  padding: 15px 15px 15px 0;
+  box-sizing: border-box;
+}
+main #container2 form .item label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #545563;
+}
+main #container2 form .item input {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  padding: 12px;
+  margin-right: 16px;
+  border: 1px solid #c7c8d2;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+main #container2 .checkbox {
+  display: flex;
+  width: 100%;
+}
+main #container2 .checkbox input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #2b2b43;
+}
+main #container2 .checkbox input:checked {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+  background-color: #4E60FF;
+}
+main #container2 .checkbox label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #2b2b43;
+  margin-left: 10px;
+}
+main #container2 .checkbox .check1, main #container2 .checkbox .check2 {
+  min-width: 50%;
+}
+main #container2 .checkbox .check1 div, main #container2 .checkbox .check2 div {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+main #container2 .information > .log-mobile {
+  box-sizing: border-box;
+  width: 298px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #ff5c60;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  color: #ff5c60;
+}
+
+main #container2 .information > .log-mobile:hover {
+  background-color: #ff5c60;
+  color: #fff;
+  box-shadow: 0px 8px 20px rgba(78, 96, 255, 0.16);
+  cursor: pointer;
+}
+
+main #container2 .information2 {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 16px 20px;
+  width: 730px;
+  height: 82px;
+  border: 1px solid #edeef2;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-top: 0px;
+}
+main #container2 .information2 > .log-out {
+  margin-right: 326px;
+  box-sizing: border-box;
+  width: 80px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #ff5c60;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  color: #ff5c60;
+}
+main #container2 .information2 > .log-out:hover {
+  background-color: #ff5c60;
+  color: #fff;
+  box-shadow: 0px 8px 20px rgba(78, 96, 255, 0.16);
+  cursor: pointer;
+}
+main #container2 .information2 > .discard {
+  margin-right: 15px;
+  box-sizing: border-box;
+  width: 146px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #83859c;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  color: #83859c;
+}
+main #container2 .information2 > .save {
+  box-sizing: border-box;
+  width: 124px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #83859c;
+  background-color: #fff;
+  color: #83859c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+main #container2 .information2 > .discard:hover, main #container2 .information2 > .save:hover {
+  background: #4e60ff;
+  box-shadow: 0px 8px 20px rgba(78, 96, 255, 0.16);
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header {
+    background: #fff;
+    justify-content: space-between;
+    display: flex;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 20px 15px;
+    border-bottom: 1px solid #edeef2;
+  }
+
+  header .navbar1 .input-wrapper {
+   display: none;
+  }
+  header .navbar1 .input-wrapper input {
+    display: none;
+  }
+
+  header .navbar1 .input-wrapper:after {
+  display: none;
+  }
+
+  header .navbar2 nav ul {
+  display: none;
+  }
+
+  header .navbar2 .nav-separate {
+    display: block;
+  }
+
+  header .navbar2 .menu-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  header .navbar2 .menu-mobile div {
+    width: 12px;
+    height: 1.5px;
+    background-color: #83859C;
+    margin: 1px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  header .navbar2 .menu-mobile div::after{
+    content: '';
+    display: block;
+    width: 12px;
+    height: 1.5px;
+    background-color: #83859C;
+    top: -4px;
+    border-radius: 10px;
+    position: absolute;
+  
+  }
+
+  header .navbar2 .menu-mobile div::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 1.5px;
+    background-color: #83859C;
+    top: 4px;
+    border-radius: 10px;
+    position: absolute;
+  
+  }
+
+  header .navbar2 .menu-mobile div {
+    width: 12px;
+    height: 1.5px;
+    background-color: #83859C;
+    margin: 1px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+  }
+
+  main #container1 .dados {
+    display: flex;
+    width: 330px;
+  }  
+
+  main #container2 .information {
+    width: 330px;
+    height: 996px;
+  } 
+  
+  main #container2 .information h2 {
+    margin: 24px 0px;
+  }
+  
+  main #container2 .information .info-avatar .info-button {
+    width: 66px;
+    height: 44px;
+   margin-left: 22px;
+  } 
+  main #container2 .information .info-avatar .info-button:hover {
+    width: 66px;
+    height: 44px;
+   margin-left: 22px;
+  } 
+  
+  main #container2 form .item input {
+    display: flex;
+    width: 298px;
+  }  
+  main #container2 .checkbox {
+    flex-direction: column;
+  } 
+
+  main #container2 .information > .log-mobile {
+    display: flex;
+  }
+
+  main #container2 .information > .log-mobile:hover {
+    display: flex;
+  }
+
+  main #container2 .information2 {
+    width: 330px;
+  }
+  
+  main #container2 .information2 > .log-out {
+    display: none;
+  }
+  main #container2 .information2 > .discard {
+    width: 139px;
+  }
+
+  main #container2 .information2 > .save {
+    width: 139px;
+  }
+ 
+}
+

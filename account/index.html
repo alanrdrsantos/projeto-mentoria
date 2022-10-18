@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar1">
+        <img src="img/logo.svg" alt="food delivery" class="img-hed" />
+        <span class="input-wrapper">
+          <input type="search" name="search" placeholder="Search" />
+        </span>
+      </div>
+      <div class="navbar2">
+        <nav>
+          <ul>
+            <li><a href="../food-delivery2/index.html">Restaurants</a></li>
+            <li><a href="#">Deals</a></li>
+            <li class="separate">|</li>
+            <li><a href="#">My Orders</a></li>
+          </ul>
+        </nav>
+        <div class="pedidos">
+          <img class="bag" src="img/shopping_bag.svg" />
+          <div class="number-ped">4</div>
+        </div>
+        <div class="avatar">
+          <img src="img/avatar.png" />
+        </div>
+        <div class="nav-separate"></div>
+        <div class="menu-mobile">
+          <div></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="container1">
+        <h1>Settings</h1>
+        <div class="dados">
+            <div class="dados-icon">
+                <img class="img1"src="img/user.svg">
+                <img class="img2" src="img/user_w.svg">
+            </div>
+          <div class="dados-p">
+              <p class="p1">Account</p>
+              <p class="p2">Personal information</p>
+          </div>
+        </div>
+        <div class="dados">
+            <div class="dados-icon">
+                <img class="img1" src="img/map.svg">
+                <img class="img2" src="img/map_w.svg">
+            </div>
+          <div class="dados-p">
+              <p class="p1">Address</p>
+              <p class="p2">Shippings addresses</p>
+          </div>
+        </div>
+        <div class="dados">
+            <div class="dados-icon">
+                <img class="img1" src="img/credit_card.svg">
+                <img class="img2" src="img/credit_card_w.svg">
+            </div>
+          <div class="dados-p">
+              <p class="p1">Payment method</p>
+              <p class="p2">Connected credit cards</p>
+          </div>
+        </div>
+        <div class="dados">
+            <div class="dados-icon">
+                <img class="img1" src="img/shield.svg">
+                <img class="img2" src="img/shield_w.svg">
+            </div>
+          <div class="dados-p">
+              <p class="p1">Security</p>
+              <p class="p2">Password, 2FA</p>
+          </div>
+        </div>
+      </section>
+      <section id="container2">
+        <h1>Account</h1>
+        <div class="information">
+          <h2>Personal information</h2>
+          <p>Avatar</p>
+          <div class="info-avatar">
+            <img src="img/avatar_big.png" alt="avatar" />
+            <div class="info-button">Change</div>
+            <div class="info-button">Remove</div>
+          </div>
+          <form>
+            <div class="item">
+              <label for="firstname">First name</label>
+              <input type="text" name="fisrtname" />
+            </div>
+            <div class="item">
+              <label for="lastname">Last name</label>
+              <input type="text" name="lastname" />
+            </div>
+            <div class="item">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" />
+            </div>
+            <div class="item">
+              <label for="phone">Phone number</label>
+              <input type="number" name="phone" />
+            </div>
+          </form>
+          <h2>Email Notification</h2>
+          <div class="checkbox">
+            <div class="check1">
+                <div>
+                    <input type="checkbox" name="newdeals" />
+                    <label for="newdeals">New deals</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="restaurants" />
+                    <label for="restaurants">New restaurants</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="order" />
+                    <label for="order">Order statuses</label>
+                </div>
+            </div>
+            <div class="check2">
+                <div>
+                    <input type="checkbox" name="password" />
+                    <label for="password">Password changes</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="offers" />
+                    <label for="offer">Special offers</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="newsletter" id="" />
+                    <label for="newsletter">Newsletter</label>
+                </div>
+              </div>
+            </div>
+            <div class="log-mobile">Log out</div>
+        </div>
+        <div class="information2">
+          <div class="log-out">Log out</div>
+          <div class="discard">Discard changes</div>
+          <div class="save">Save changes</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
